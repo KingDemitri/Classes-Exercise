@@ -1,24 +1,23 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Classes
 {
-    public class Program
+    internal class Car
     {
-        static void Main(string[] args)
+        public Car()
         {
-        
-        Car Luxury = new Car();
-            Luxury.Make = "Lamborghini";
-            Luxury.Model = "Aventador (LP 700-4)";
-            Luxury.Year = 2011;
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
+    }
 
-            Console.WriteLine(Luxury.Make);
-            Console.WriteLine(Luxury.Model);
-            Console.WriteLine(Luxury.Year);
-        }
     }
 }
-
 
 
 //Create a class named Car - make sure it is public
